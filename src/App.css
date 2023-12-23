@@ -1,0 +1,96 @@
+*{
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: Rubik Doodle Shadow;
+}
+.main{
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  
+}
+.sub1{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.std{
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+}
+.onoff-main{
+    width: 60px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: white;
+    position: absolute;
+    right: 27%;
+    transition: background-color ease-in-out 1s;
+    top: 30%;
+}
+.off{
+  border-radius: 100px;
+  width: 35px;
+  height: 30px;
+  color: white;
+  background-color:black;
+  border: 3px solid white;
+  /* border: darkmagenta; */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transform: translateX(0px);
+  transition: transform 0.8s ease-in-out ;
+}
+.on{
+  border-radius: 100px;
+  width: 35px;
+  height: 30px;
+  color: white;
+  background-color: black;
+  border: 3px solid white;
+  /* border: darkmagenta; */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transform: translateX(25px);
+  transition: transform 0.8s ease-in-out ;
+}
+.light{
+  width:100%;
+  justify-content:center; 
+  display: flex;
+  transition: opacity ease 1s;
+}
+.sub1 h1{
+  position: absolute;
+  bottom: 32%;
+}
+.turn{
+  left: 13%;
+  transition: opacity 0.9s ease 0.4s;
+  animation: alert 0.3s ease-in-out 0.8s infinite;
+}
+.thank{
+  left:30%;
+  color: white;
+  transition: opacity 0.4s ease 0.5s;
+}
+
+@keyframes alert {
+  0%{
+    color: yellow;
+  }
+  100%{
+    color: red;
+  }
+}
+.eye{
+  position: absolute;
+  left: 730px;
+  top: 457px;
+  rotate: -22deg;
+  transition: opacity 0.3s ease-in-out 0.3s;
+}
